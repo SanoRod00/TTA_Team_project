@@ -3,104 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our team</title>
+    <title>Our Team</title>
     <style>
-      .member-title{
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        padding: 20px;
+      }
+
+      .member-title {
         color: grey;
         font-size: 14px;
       }
-      .member-container{
-      text-align: center;
-       border: 2px solid gray;
-       border-radius: 20px;
-       margin: 25px;
+
+      .member-container {
+        text-align: center;
+        border: 2px solid gray;
+        border-radius: 20px;
+        margin: 25px;
+        overflow: hidden;
       }
-      .member-container img{
-     /* border-image: fill;
-        linear-gradient:(#0003, #000);*/
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
+
+      .member-container img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
       }
-      .member-container h3{
+
+      .member-container h3 {
         font-weight: 400;
       }
-     
-      .main-heading{
+
+      .main-heading {
         text-align: center;
       }
-      .main-heading p{
+
+      .main-heading p {
         color: gray; 
         font-weight: 100;
       }
-      .about-button{
-         background-color: white; 
-         color: grey;
+
+      .about-button {
+        background-color: white; 
+        color: grey;
         border: 1.5px solid gray;
       }
-      .contact-button{
+
+      .contact-button {
         background-color: #4634eb; 
         color: white;
-        
-        
       }
-        .borderless-button{
-          
-          padding: 8px 16px;
-          border-radius: 7px;
-          margin: 5px;
-         
-        }
-         .main-container{
-        display: flex;
+
+      .borderless-button {
+        padding: 8px 16px;
+        border-radius: 7px;
+        margin: 5px;
+      }
+
+      .main-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
         justify-content: center;
+        align-items: stretch;
       }
-      
-       
-      
+
+      @media (max-width: 768px) {
+        .member-container {
+          margin: 15px;
+        }
+
+        .borderless-button {
+          padding: 6px 12px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .main-heading h2 {
+          font-size: 24px;
+        }
+
+        .main-heading p {
+          font-size: 14px;
+        }
+
+        .borderless-button {
+          padding: 4px 10px;
+          font-size: 14px;
+        }
+      }
     </style>
 </head>
 <body>
 
-    <section >
+    <section>
       <div class="main-heading">
         <div>
-               <h2>Meet the team</h2>
-        <p>Meet our team of professionals to serve you</p>
+          <h2>Meet the Team</h2>
+          <p>Meet our team of professionals to serve you</p>
         </div>
-       
-     
-       <div>
+        <div>
           <button class="borderless-button about-button" title="Go to about us">About Us</button>
-        <button class="borderless-button contact-button" title="Go to contact page">Contact</button>
-       </div>
+          <button class="borderless-button contact-button" title="Go to contact page">Contact</button>
+        </div>
       </div><br><br>
-       <div class="main-container">      
-         <div class="member-container">
-            <img class="im1"  src=" C:\Users\PC\Desktop\TechtonicAfrica\project1\first saturday\coffee\week2\handsome-black-man-young-front-600nw-2127472937.webp" height="250" width="250">
-<p class="member-title">Medical Assistance</p>
-<h3>Wade Warren</h3>   
-<p>&clubs;</p>
-         </div>     
-       <div class="member-container">
-        <img src=" C:\Users\PC\Desktop\TechtonicAfrica\project1\first saturday\coffee\week2\female image.jpg" height="250" width="250">
-        <p style="color: gray; font-size: 14px;">Dog trainer</p>
-        <h3>Anneth Black</h3>
-        <p>&spades;</p>
-       </div>
-          <div class="member-container">
-            <img src="C:\Users\PC\Desktop\TechtonicAfrica\project1\first saturday\coffee\week2\female image.jpg" height="250" width="250" alt="">
-            <p style="color: gray; font-size: 14px;">President of sales</p>
-            <h3>Savannah Wayne</h3>
-            <p>&hearts;</p>
-          </div>
-       <div class="member-container">
-        <img src="C:\Users\PC\Desktop\TechtonicAfrica\project1\first saturday\coffee\week2\handsome-black-man-young-front-600nw-2127472937.webp" height="250" width="250">
-        <p style="color: gray; font-size: 14px;">Nursing Assistant</p>
-        <h3>Jane Wilson</h3>   
-        <p>&diams;</p>
-       </div>
-      
-       
+      <div class="main-container">      
+        <div class="member-container">
+          <img class="im1" src="./9 Famous Male Celebrities and Their Favorite Colognes _ Dapper Confidential.jpeg" alt="Medical Assistance">
+          <p class="member-title">Medical Assistance</p>
+          <h3>Wade Warren</h3>   
+          <p>&clubs;</p>
+        </div>     
+        <div class="member-container">
+          <img src="./32 Sleek Short Haircuts for Black Women to Rock!.jpeg" alt="Dog Trainer">
+          <p class="member-title">Dog Trainer</p>
+          <h3>Anneth Black</h3>
+          <p>&spades;</p>
+        </div>
+        <div class="member-container">
+          <img src="./9 Famous Male Celebrities and Their Favorite Colognes _ Dapper Confidential.jpeg">
+          <p class="member-title">President of Sales</p>
+          <h3>Savannah Wayne</h3>
+          <p>&hearts;</p>
+        </div>
+        <div class="member-container">
+          <img src="./32 Sleek Short Haircuts for Black Women to Rock!.jpeg" alt="Nursing Assistant">
+          <p class="member-title">Nursing Assistant</p>
+          <h3>Jane Wilson</h3>   
+          <p>&diams;</p>
+        </div>
       </div>
     </section>
 </body>
